@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yapılacak Listesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="liste-ikon.png" type="image/png">
+
+</head>
+<body>
+<div class="container">
+  
+<button id="themeToggle">☀️</button>
+  <h1>Yapılacaklar Listesi</h1>
+
+
+
+  <!-- 👇 Burası filtre butonları -->
+
+  <div class="filter-buttons">
+    
+    <button data-filter="all" class="filter-btn active">Tümü</button>
+    <button data-filter="completed" class="filter-btn">Tamamlanan</button>
+    <button data-filter="uncompleted" class="filter-btn">Tamamlanmayan</button>
+  </div>
+  
+
+
+  <!-- 👇 Burası görev girişi -->
+  <div class="todo-input">
+    <input type="text" id="todoInput" placeholder="Bir görev gir..." />
+    <button id="addBtn">Ekle</button>
+  </div>
+  <ul id="todoList"></ul>
+ 
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
