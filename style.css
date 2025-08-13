@@ -207,43 +207,63 @@ body.dark .edit-input {
 body.dark h1{
   color:#ddd
 }
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .container {
-    padding: 20px;
     width: 100%;
     max-width: 100%;
+    padding: 15px 10px;
     border-radius: 0;
     box-shadow: none;
   }
 
-  .todo-input {
-    flex-direction: column;
+  h1 {
+    font-size: 20px;
+    text-align: center;
   }
 
-  #todoInput, #addBtn {
+  .todo-input {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #todoInput,
+  #addBtn {
     width: 100%;
+    font-size: 14px;
+    padding: 10px;
   }
 
   .filter-buttons {
     flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
   }
 
   .filter-btn {
     width: 100%;
-    margin: 5px 0;
+    font-size: 14px;
+    padding: 8px;
   }
 
   #todoList li {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
+  }
+
+  .todo-text {
+    font-size: 14px;
   }
 
   .delete-btn {
     align-self: flex-end;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 6px;
+  }
+
+  .edit-input {
+    font-size: 14px;
+    padding: 8px;
   }
 }
-body {
-  padding: 40px 20px;
-  background: #f0f2f5;
-}
+
